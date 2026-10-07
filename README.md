@@ -63,7 +63,7 @@ Whether you are evaluating enterprise-grade commercial platforms for tier-1 fina
 
 ## 🔓 Open-Source GitHub Projects 🌐
 
-*Sorted by GitHub Stars Count (Descending)* 🌟
+*Sorted by GitHub_Stars_Count (Descending)* 🌟
 
 - **[OpenBB Terminal](https://github.com/OpenBB-finance/OpenBB)** [![Stars](https://img.shields.io/github/stars/OpenBB-finance/OpenBB?style=social&color=white)](https://github.com/OpenBB-finance/OpenBB/stargazers) ⭐ **73,918 stars**  
   **Open-source investment research platform**, AGPL-3.0 licensed. **Bloomberg Terminal alternative** for retail investors and financial analysts. Provides quantitative analysis tools for **stocks, options, crypto, forex, macro data, and financial statements**. **The standard open-source financial data platform**. 📊
@@ -160,3 +160,12 @@ If you find this project valuable:
 <p align="center">
   <b>Made with ❤️ for fintech engineers, banking architects, and open-source financial infrastructure advocates.</b>
 </p>
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Cloud-Financial-Services-Solutions&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Cloud-Financial-Services-Solutions_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Cloud-Financial-Services-Solutions_growth.svg">
+  </picture>
+</a>
