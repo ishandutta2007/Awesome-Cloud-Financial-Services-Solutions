@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes pulse {
+      0% { opacity: 0.3; transform: scale(0.98); }
+      50% { opacity: 0.7; transform: scale(1.02); }
+      100% { opacity: 0.3; transform: scale(0.98); }
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -100; }
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(0px); opacity: 0.2; }
+      50% { transform: translateY(-15px); opacity: 0.8; }
+      100% { transform: translateY(0px); opacity: 0.2; }
+    }
+    .bg-pulse { animation: pulse 6s ease-in-out infinite; transform-origin: center; }
+    .flow-line { stroke-dasharray: 10, 10; animation: dash 5s linear infinite; }
+    .particle1 { animation: floatParticle 4s ease-in-out infinite; }
+    .particle2 { animation: floatParticle 6s ease-in-out infinite 1s; }
+    .particle3 { animation: floatParticle 5s ease-in-out infinite 2s; }
+  </style>
+
+  <!-- Base Background -->
+  <rect width="1200" height="400" fill="url(#bgGrad)" />
+  <rect width="1200" height="400" fill="url(#grid)" />
+
+  <!-- DYNAMIC ANIMATED BACKGROUND ELEMENTS (Behind Text) -->
+  <g class="bg-pulse">
+    <circle cx="200" cy="100" r="180" fill="#3b82f6" opacity="0.15" filter="url(#glow)" />
+    <circle cx="1000" cy="300" r="220" fill="#6366f1" opacity="0.15" filter="url(#glow)" />
+    <circle cx="600" cy="200" r="150" fill="#f59e0b" opacity="0.08" filter="url(#glow)" />
+  </g>
+
+  <!-- Decorative Animated Flow Lines (Low Opacity in Background) -->
+  <path d="M -50 320 Q 300 250 600 340 T 1250 280" fill="none" stroke="url(#cyanGrad)" stroke-width="2" opacity="0.4" class="flow-line" />
+  <path d="M -50 80 Q 400 180 800 60 T 1250 120" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.3" class="flow-line" />
+
+  <!-- Floating Financial Tech Particles -->
+  <circle cx="150" cy="280" r="4" fill="#38bdf8" class="particle1" />
+  <circle cx="350" cy="90" r="5" fill="#fbbf24" class="particle2" />
+  <circle cx="850" cy="320" r="6" fill="#818cf8" class="particle3" />
+  <circle cx="1050" cy="110" r="4" fill="#34d399" class="particle1" />
+
+  <!-- FOREGROUND TEXT AND BADGES (Stays crystal clear & on top) -->
+  <g text-anchor="middle">
+    <!-- Icon Header -->
+    <text x="600" y="110" font-family="system-ui, -apple-system, sans-serif" font-size="42">🏦 ☁️ 💳 ⚡</text>
+
+    <!-- Main Title -->
+    <text x="600" y="175" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="44" fill="#ffffff" letter-spacing="1">
+      Awesome Cloud Financial Services
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="225" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="22" fill="#9ca3af" letter-spacing="0.5">
+      Enterprise Cloud FSI Platforms &amp; Open-Source Core Banking Infrastructure
+    </text>
+
+    <!-- Pill Badges in Foreground -->
+    <!-- Pill 1 -->
+    <g transform="translate(310, 275)">
+      <rect width="170" height="36" rx="18" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" />
+      <text x="85" y="23" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="14" fill="#60a5fa" text-anchor="middle">☁️ Hyperscaler FSI</text>
+    </g>
+
+    <!-- Pill 2 -->
+    <g transform="translate(515, 275)">
+      <rect width="170" height="36" rx="18" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" />
+      <text x="85" y="23" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="14" fill="#fbbf24" text-anchor="middle">🏦 Core Banking</text>
+    </g>
+
+    <!-- Pill 3 -->
+    <g transform="translate(720, 275)">
+      <rect width="170" height="36" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="1.5" />
+      <text x="85" y="23" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="14" fill="#34d399" text-anchor="middle">🔓 Open-Source</text>
+    </g>
+  </g>
+</svg>
